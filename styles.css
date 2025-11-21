@@ -149,13 +149,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Video Background */
 .hero-video {
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%);
     z-index: 0;
     object-fit: cover;
 }
