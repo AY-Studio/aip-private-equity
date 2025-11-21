@@ -90,10 +90,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #ffffff !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-logo:hover {
+    opacity: 0.8;
 }
 
 .navbar-nav .nav-link {
@@ -587,11 +595,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--accent-cyan) !important;
 }
 
-.footer-brand {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #ffffff;
-    letter-spacing: 1px;
+.footer-logo {
+    height: 50px;
+    width: auto;
+    display: block;
 }
 
 .footer-heading {
