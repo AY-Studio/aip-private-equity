@@ -188,7 +188,29 @@ window.addEventListener('load', function() {
 });
 
 // ========================================
+// Back to Top Button
+// ========================================
+const backToTopButton = document.getElementById('backToTop');
+
+// Show/hide button based on scroll position
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('show');
+    } else {
+        backToTopButton.classList.remove('show');
+    }
+});
+
+// Smooth scroll to top when clicked
+backToTopButton.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// ========================================
 // Console Message
 // ========================================
 console.log('%c AIP Capital ', 'background: #0056A7; color: #fff; padding: 10px 20px; font-size: 16px; font-weight: bold;');
-console.log('%c Aviation Investment Specialists ', 'background: #00c5de; color: #002d5c; padding: 5px 20px; font-size: 12px;');
+console.log('%c Private Equity Specialists ', 'background: #00c5de; color: #002d5c; padding: 5px 20px; font-size: 12px;');
